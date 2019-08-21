@@ -6,12 +6,19 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!pomoc');
-        message.reply('Cześć ta komenda jest jeszcze nie skończona!');
+    if (message.content === '!pomoc') {
+    	message.channel.send(' ');
+        message.channel.send('Ups...');
+        message.channel.send('Ta komenda jest jeszcze nie skończona!');
+        message.channel.send(' ');
   	}
-    if (message.content === '!info');
-        message.channel.send('Cześć jestem stefan');
-        message.channel.send('Może ci pomóc: !pomoc');
+    if (message.content === '!info') {
+        message.channel.send('■■■■■■■■■■■■');
+        message.channel.send('Czesc jestem Stefan');
+        message.channel.send('zostałem stworzony przez Crazy1190');
+        message.channel.send('Pisze w języku polskim');
+        message.channel.send('Jestem w wersji 1.0 Beta');
+        message.channel.send('■■■■■■■■■■■■');
         }
 });
 
